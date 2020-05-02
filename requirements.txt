@@ -5,3 +5,11 @@
 -r core/requirements.txt
 
 ### Add project-specific requirements below.
+
+pandas==1.0.3
+langdetect==1.0.8
+emoji==0.5.4
+sklearn==0.0
+requests==2.23.0
+nltk==3.5
+cloudpickle

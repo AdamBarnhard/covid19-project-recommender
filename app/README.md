@@ -19,14 +19,13 @@ If the source code (``*.py` files) is updated, the app is reloaded automatically
 ```
 curl --location --request POST 'http://localhost:5000/predict' \
 --header 'Content-Type: application/json' \
---data-raw '{"data":[[0, 1], [2, 3]]}'
+--data-raw '{"data":["python dashboard"]}'
 ```
 
+Returns a JSON result generated from `pd.DataFrame.to_json()`. To convert back to a Pandas DataFrame:
+
 ```
-[
-  2,
-  2
-]
+df = pd.read_json(result)
 ```
 
 ## Creating an app on Heroku
