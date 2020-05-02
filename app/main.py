@@ -19,7 +19,7 @@ def predict():
     """
     input = flask.request.json['data']
     result = model.predict(input)
-    return flask.jsonify(result)
+    return result.to_json()
 
 if __name__ == "__main__":
     app.run()
